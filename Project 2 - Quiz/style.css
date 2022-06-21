@@ -4,8 +4,6 @@
 html{
     box-sizing: border-box;
     font-size: 16px;
-    margin: 0;
-    padding: 0;
 }
 *{
     box-sizing: inherit;
@@ -41,7 +39,7 @@ body{
 
 /* main section */
 .main{
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
 }
 .questions{
@@ -57,15 +55,18 @@ body{
     margin-top: 5px;
 }
 .question{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
-    padding: 10px 10px;
+    padding: 10px 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    height: 60vh;
+    height: 40vh;
     counter-increment: css-counter 1;
 }
 .question::before{
-    content: "Question " counter(css-counter);
+    content: "Question " counter(css-counter) " of 10:";
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -74,6 +75,25 @@ body{
     padding: 10px 20px;
     margin: 10px 0;
     border-radius: 8px;
+    height: 20vh;
+}
+.main ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+}
+.main li{
+    margin-bottom: 5px;
+}
+button{
+    background-color: rgb(21, 208, 21);
+    padding: 8px 20px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    margin: 20px 0;
 }
 
 @media screen and (max-width: 480px) {
