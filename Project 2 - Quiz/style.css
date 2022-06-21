@@ -7,6 +7,9 @@ html{
     margin: 0;
     padding: 0;
 }
+*{
+    box-sizing: inherit;
+}
 body{
     font-family: 'Poppins',sans-serif;
     width: 100%;
@@ -25,6 +28,8 @@ body{
     background-color: white;
     text-align: center;
     height: 100px;
+    width: 100%;
+    position: sticky;
 }
 .header p{
     display: inline-block;
@@ -32,4 +37,50 @@ body{
 .header:first-child{
     font-size: 1.8rem;
     font-weight: 600;
+}
+
+/* main section */
+.main{
+    width: 500px;
+    margin: 0 auto;
+}
+.questions{
+    padding: 10px;
+    width: 100%;
+    counter-reset: css-counter 0;
+}
+.dash{
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: black;
+    margin-top: 5px;
+}
+.question{
+    background-color: white;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    height: 60vh;
+    counter-increment: css-counter 1;
+}
+.question::before{
+    content: "Question " counter(css-counter);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.result{
+    background-color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 480px) {
+    .main{
+        width: 320px;
+    }
+    .question{
+        font-size: .8rem;
+    }
 }
