@@ -6,20 +6,35 @@ html{
     font-size: 16px;
 }
 *{
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
+=======
+    box-sizing: inherit;
+>>>>>>> refs/remotes/origin/main
 }
 body{
     font-family: 'Roboto Slab', serif;
     box-sizing: border-box;
     width: 100%;
+<<<<<<< HEAD
+=======
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(221, 218, 218);
+>>>>>>> refs/remotes/origin/main
 }
 .container{
     width: 100%;
 
 }
 
+<<<<<<< HEAD
 /* header */
+=======
+/* header section */
+>>>>>>> refs/remotes/origin/main
 .header{
     width: 100%;
     height: 100px;
@@ -86,6 +101,7 @@ button{
 }
 button:hover{
     background-color: white;
+<<<<<<< HEAD
     color: #3D9589;
 }
 .circles{
@@ -106,3 +122,85 @@ button:hover{
     background-color: green;
 }
 
+=======
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    position: sticky;
+}
+.header p{
+    display: inline-block;
+}
+.header:first-child{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* main section */
+.main{
+    width: 600px;
+    margin: 0 auto;
+}
+.questions{
+    padding: 10px;
+    width: 100%;
+    counter-reset: css-counter 0;
+}
+.dash{
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: black;
+    margin-top: 5px;
+}
+.question{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    height: 40vh;
+    counter-increment: css-counter 1;
+}
+.question::before{
+    content: "Question " counter(css-counter) " of 10:";
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.result{
+    background-color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    height: 20vh;
+}
+.main ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+}
+.main li{
+    margin-bottom: 5px;
+}
+button{
+    background-color: rgb(21, 208, 21);
+    padding: 8px 20px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 480px) {
+    .main{
+        width: 320px;
+    }
+    .question{
+        font-size: .8rem;
+    }
+}
+>>>>>>> refs/remotes/origin/main
