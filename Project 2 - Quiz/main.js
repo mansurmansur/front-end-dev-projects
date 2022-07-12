@@ -101,11 +101,15 @@ nextButton.addEventListener('click', (ev) =>{
         return;
     }
     
-    //check if the answere is correct
+    // TODO:    - got to next question after if answered
+    //          - show just result at the end when all questions answered
     
 });
 
 //add click listener to all multiple choices
+// TODO: - restrict the click only to one so that after that if user clicks nothing happens
+//       - add cross or tick at the end of the choice clicked to show wrong or right
+//       - fill the circle questions when question answered
 for (const li of liElements){
     li.addEventListener('click', (ev) =>{
         let response = li.innerHTML;
@@ -124,3 +128,4 @@ for (const li of liElements){
         }
     });
 }
+
