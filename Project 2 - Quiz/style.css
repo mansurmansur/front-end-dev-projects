@@ -91,7 +91,7 @@ button:hover{
     display: flex;
     margin-top: 10px;
 }
-.q1,.q2, .q3{
+.q1,.q2, .q3, .q4, .q5{
     width: 20px;
     height: 23px;
     text-align: center;
@@ -101,8 +101,11 @@ button:hover{
     color: white;
 }
 
-.answered{
+.correct{
     background-color: green;
+}
+.wrong{
+    background-color: red;
 }
 
 /* mobile style */
