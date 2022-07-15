@@ -79,8 +79,14 @@ const circleQ4 = document.querySelector(".q4");
 const circleQ5 = document.querySelector(".q5");
 
 
-//test purpose
-console.log(liElements);
+//Functions
+function removeEventListener(nodeList){
+    let i = [0];
+    for (const node in nodeList){
+        console.log(nodeList[i].cloneNode(true));
+        i++;
+    }
+}
 
 
 //fill the question content
@@ -120,12 +126,20 @@ for (const li of liElements){
             li.style.color = "white";
             score++;
             scoreOutOf100 = score * 20;
+
+            //remove event listener
+            removeEventListener(liElements);
         } else{
             li.style.background = "red";
             li.style.color = "white";
             document.querySelector(`.${question.choice}`).style.background = "green";
             document.querySelector(`.${question.choice}`).style.color = "white";
+
+              //remove event listener
+              removeEventListener(liElements);
         }
     });
 }
+
+
 
