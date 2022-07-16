@@ -6,13 +6,13 @@ This Repo contains personal projects to improve on coding skills and showcase my
 
 code: [Calculator Repo](https://github.com/mansurmansur/front-end-dev-projects/tree/main/Project%201%20-%20Calculator)
 
-**Description** 
---------------
+### **Description** 
+    --------------
 
 
 ## Project 2: Quiz Web App
 
-**Description** 
---------------
+### **Description** 
+    --------------
 
 code: [Quiz Web App Repo](https://github.com/mansurmansur/front-end-dev-projects/tree/main/Project%202%20-%20Quiz)
