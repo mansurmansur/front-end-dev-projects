@@ -4,7 +4,7 @@ This Repo contains personal projects to improve on coding skills and showcase my
 
 ## Project 1 : Calculator
 
-code: [Calculator Repo](front-end-dev-projects/Project 1 - Calculator/)
+code: [Calculator Repo](github.com/mansurmansur/front-end-dev-projects/Project 1 - Calculator/)
 
 **Description** 
 --------------
@@ -15,4 +15,4 @@ code: [Calculator Repo](front-end-dev-projects/Project 1 - Calculator/)
 **Description** 
 --------------
 
-code: [Quiz Web App Repo]()
+code: [Quiz Web App Repo](github.com/mansurmansur/front-end-dev-projects/Project 1 - Quiz)
