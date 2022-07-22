@@ -6,4 +6,4 @@ This is a project that is on freecodecamp for the responsive web design course, 
 * CSS
 
 The project looks like this when completed:
-[embed]https://tribute-page.freecodecamp.rocks.pdf [/embed]
+<object data="https://tribute-page.freecodecamp.rocks.pdf" type="application/type" width="100%"></object>
