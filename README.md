@@ -29,3 +29,6 @@ code: [Technical Documetation Page](https://github.com/mansurmansur/front-end-de
 ### **Description**
 
 This project is a technical documentation page to serve as instruction or reference for a topic. This is one of the project done on freecodecamp for the Responsive Web Design course.
+
+For this particular project it is a JS Documentation that can be used as reference to the basic concepts in JS.
+
