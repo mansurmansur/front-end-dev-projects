@@ -65,8 +65,7 @@ input{
     color: white;
     height: 30;
 }
-form{
-    width: 150px;
+.form{
     position: relative;
 }
 input:focus{
@@ -108,4 +107,20 @@ h2{
 p{
     margin: 10px 0;
     line-height: 1.2;
+}
+
+/* utility classes */
+.hide{
+    display: none;
+}
+.show{
+    display: inline;
+}
+.hideSearch{
+    width: fit-content;
+    margin-left: 30px;
+}
+.showSearch{
+    margin-left: 0;
+    width: 150px;
 }
