@@ -1,0 +1,74 @@
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+*{
+    box-sizing: inherit;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+/* header */
+header{
+    height: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+    align-items: center;
+}
+.logo{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.navigation-weather{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 100%;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 15px;
+}
+nav li a{
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.weather{
+    display: flex;
+}
+.weather-update{
+    display: flex;
+    flex-direction: column;
+}
+.weather-icon-wrapper{
+    background-color: #F70058;
+    border: none;
+    height: 50px;
+    padding: 5px 10px;
+}
+main{
+    height: 92%;
+    width: 100%;
+    overflow: hidden;
+    background: url(img/sebastian-staines-xZIFEPtRsRI-unsplash-min_1443x1154.jpg);
+    background-size:cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
