@@ -107,13 +107,13 @@ main{
     width: 538px;
 }
 
-.container p{
+.container p{ 
     width: 615px;
     height: 117px;
     font-size: 1.125rem;
     color: #3A3A3A;
     line-height: 25px;
-}
+} 
 
 .season-pass-btn{
     font-weight: 700;
