@@ -53,7 +53,7 @@ body{
     align-items: center;
     padding: 20px 0;
 }
-.add-input{
+.add-input, .filter-input{
     border: none;
     border-bottom:5px solid #559f32 ;
     width: 300px;
@@ -88,5 +88,36 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: #f5f5f5 ;
+    background: #f5f5f5;
+}
+h2{
+    padding: 20px 0;
+    text-transform: capitalize;
+    color: #4b4b4b;
+}
+.filter-input{
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+}
+.list-container{
+    padding: 20px 0;
+}
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 1px solid #c2c2c2;
+    align-items: center;
+}
+.list-item p{
+    color: #616161;
+}
+.list-item button{
+    border: none;
+    background: transparent;
+}
+.list-item button:hover{
+    opacity: 0.5;
 }
