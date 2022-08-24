@@ -101,6 +101,10 @@ h2{
 }
 .list-container{
     padding: 20px 0;
+    height:fit-content;
+}
+.list-container li{
+    list-style-type: none;
 }
 .list-item{
     display: flex;

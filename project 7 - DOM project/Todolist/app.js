@@ -6,7 +6,7 @@
 const add_input = document.querySelector('.add-input');
 const add_btn = document.querySelector('.add');
 const filter_input = document.querySelector(".filter-input");
-const list_container = document.querySelector(".list-container");
+const list_container = document.querySelector(".list");
 
 // new list item
 const listEl = document.createElement("div");
@@ -26,8 +26,9 @@ add_btn.addEventListener("click", () => {
         alert("error input an item in the text box");
     } else {
         pEL.innerHTML = add_input.value;
-        list_container.append(listEl);
-        list_container.append(listEl);
+        let item = document.createElement("li");
+        item.append(listEl);
+        list_container.lastChild.after(item);
         add_input.value = "";
     }
 });
