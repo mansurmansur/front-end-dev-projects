@@ -10,8 +10,9 @@ function navToggle(){
         navEl.classList.toggle("open"); 
         contentEl.classList.toggle("shift");
 
-        for (let bar of barsEl) {
-            console.log(bar);
+        // for bars to change from hamburger to cross
+        for (const bar of barsEl) {
+            bar.classList.toggle("change");
         }
     })
 }
