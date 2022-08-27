@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal with Js</title>
+</head>
+<body>
+    <button type="button" class="trigger">
+        Trigger
+    </button>
+    <div class="modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h1 class="header">Javascript Lessons</h1>
+                <button class="close">
+                    <span>&times;</span></button>
+            </div>
+            <div class="modal__body">
+                <h3>Get weekly free tutorials to your inbox.</h3>
+                <p>No BS. Only quality goodies.</p>
+                <form action="/" class="form">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="janedoe@email.com">
+                    <label for="submit"></label>
+                    <input type="submit" id="submit" value="join">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    background: #DDD7CE;
+    font-family: sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+.trigger{
+    top:0;
+    margin: 2rem auto;
+    display: block;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    outline: 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    background: #2C3344;
+    color: white;
+    border: none;
+}
+.trigger:hover{
+    cursor: pointer;
+}
+
+/* modal */
+.modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.modal__content{
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 640px;
+    padding: 2rem;
+    background-color: #2C3344;
+    border-radius: 4px;
+    position: relative;
+    animation: 0.3s slidedown;
+}
+.modal__header{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.header{
+    font-family: cursive;
+    line-height: 80px;
+    letter-spacing: 4px;
+    font-size: 2.5rem;
+}
+.close{
+    background-color: #2C3344;
+    outline: 0;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    position:absolute;
+    top: 0;
+    left: 20px;
+}
+
+.modal__body{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.modal__body h3{
+    font-size: 1.25rem;
+    line-height: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.modal__body p{
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+#email{
+    display: block;
+    width: 85%;
+    margin: 5px auto;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    outline: 0;
+    border: 3px white solid;
+    background: #2C3344;
+    border-radius: 4px;
+}
+
+#submit{
+    border: none;
+    outline: 0;
+    color: #2C3344;
+    padding: 0.6rem 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    border-radius: 4px;
+
+}
+#submit:hover{
+    cursor: pointer;
+}
+
+
+/* utility classes */
+.open{
+    display: block;
+}
+
+/* animation */
+@keyframes slidedown {
+    from{
+        top: -100px;
+        opacity: 0;
+    }
+    to{
+        top: 0px;
+        opacity: 1;
+    }
+}
