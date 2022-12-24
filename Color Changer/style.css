@@ -2,7 +2,9 @@
     --main-bg-color: #BDBDBD;
 
     /* sizes */
-    
+    --size-side: 4rem;
+    --main-width: 100%;
+    --main-height: 100vh;
     
     /* color palette */
     --secondary-bg-green: #219653;
@@ -11,4 +13,70 @@
     --secondary-bg-blue2:  #56CCF2;
     --secondary-bg-orange: #F2994A;
     --secondary-bg-yellow: #F2C94C;
+    --border-color: #BDBDBD;
 }
+
+
+html{
+    font-size: 16px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--main-bg-color);
+    width: var(--main-width);
+    height: var(--main-height);
+}
+
+.main{
+    position: absolute;
+    width:80%;
+    margin: 0 128px;
+    height: 100%;
+    background: var(--secondary-bg-green);
+}
+.color-palette{
+    display: flex;
+    width: 50%;
+    margin: 80vh auto;
+}
+
+.button{
+    width: var(--size-side);
+    height: var(--size-side);
+    border: 2px solid var(--border-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+/* color palettes  */
+
+.green{
+    background-color: var(--secondary-bg-green);
+}
+
+.purple{
+    background-color: var(--secondary-bg-purple);
+}
+
+.blue-2{
+    background-color: var(--secondary-bg-blue1);
+}
+
+.blue-3{
+    background-color: var(--secondary-bg-blue2);
+}
+
+.orange{
+    background-color: var(--secondary-bg-orange);
+}
+
+.yellow{
+    background-color: var(--secondary-bg-yellow);
+}
+
